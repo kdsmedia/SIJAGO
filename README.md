@@ -533,3 +533,16 @@ asset gambar, icon dan karakter sudah lengkap tersimpan di folder /asset.
 jangan generate asset atau gambar apapun karena asset game ini sudah tersedia lengkap tinggal di crop dan di sesuaikan penempatannya saja.
 
 pada file google-services.json terdapat banyak cloent yang tidak di butuhkan tolong di hapus saja dan sisakan hanya com.altomedia.sijago saja.
+
+
+
+
+
+‎Tambahkan admob dan sesuaikan penempatannya dengan strategis dan pastikan iklan tidak mengganggu. ‎Tetapkan adreward untuk klaim bonus misalnya: bonus koin, bonus bundle, bonus Hp, bonus power. ‎ ‎ ‎Appid: ca-app-pub-6881903056221433~2813023257 ‎Banner: ca-app-pub-6881903056221433/9186859919 ‎Adreward: ca-app-pub-6881903056221433/4824822936 ‎Native: ca-app-pub-6881903056221433/9885577920 ‎Inetersitial: ca-app-pub-6881903056221433/6389306182 ‎Pembukaan: ca-app-pub-6881903056221433/5998303806 ‎Pengantar bonus: ca-app-pub-6881903056221433/2450061174
+
+tambahkan ini:
+
+<script type="module">   // Import the functions you need from the SDKs you need   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";   import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";   // TODO: Add SDKs for Firebase products that you want to use   // https://firebase.google.com/docs/web/setup#available-libraries   // Your web app's Firebase configuration   // For Firebase JS SDK v7.20.0 and later, measurementId is optional   const firebaseConfig = {     apiKey: "AIzaSyDBM_PPd7uEAyGg8d2ILQ1bTx3A6KKFjBk",     authDomain: "altomedia-8f793.firebaseapp.com",     databaseURL: "https://altomedia-8f793-default-rtdb.asia-southeast1.firebasedatabase.app",     projectId: "altomedia-8f793",     storageBucket: "altomedia-8f793.firebasestorage.app",     messagingSenderId: "327513974065",     appId: "1:327513974065:web:12e57a1a5a8288db91bc10",     measurementId: "G-1YCKHPWC1L"   };   // Initialize Firebase   const app = initializeApp(firebaseConfig);   const analytics = getAnalytics(app); </script>
+ubah tombol login menggunakan: logingoogle.png
+
+install sdk, lalu build apk yang sempurna !!!! pastikan apk dapat di install sempurna dan aplikasi bisa di mainkan dengan lancar dan sempurna. pastikan fitur login sempurna dan jangan sampai terdapat bug atau eror pada aplikasi !!! kerjakan dengan sempurna !!!
